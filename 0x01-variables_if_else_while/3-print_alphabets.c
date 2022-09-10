@@ -1,23 +1,24 @@
-#!/bin/bash
 #include <stdio.h>
 
 
 
 /**
+
+ * main - lowercase and uppercase
+
  *
- *  * main - lowercase , uppercase
- *
- *   *
- *
- *    * Return: Always 
- *
- *     */
+
+ * Return: Always (Success)
+
+ */
 
 int main(void)
 
 {
 
 	char c;
+
+
 
 	for (c = 'a'; c <= 'z'; c++)
 
@@ -27,6 +28,8 @@ int main(void)
 
 	}
 
+
+
 	for (c = 'A'; c <= 'Z'; c++)
 
 	{
@@ -35,10 +38,13 @@ int main(void)
 
 	}
 
+
+
 	putchar('\n');
+
+
 
 	return (0);
 
 }
-
 
