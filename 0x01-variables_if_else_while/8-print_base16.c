@@ -1,23 +1,24 @@
-#!/bin/bash
 #include <stdio.h>
 
 
 
 /**
- *
- *   * main - Prints a hexadecimal string
- *
- *     *
- *
- *       * Return: Always success
- *
- *         */
+
+  * main - Prints a hexadecimal string
+
+  *
+
+  * Return: Always (Success)
+
+  */
 
 int main(void)
 
 {
 
 	char c;
+
+
 
 	for (c = '0'; c <= '9'; c++)
 
@@ -27,6 +28,8 @@ int main(void)
 
 	}
 
+
+
 	for (c = 'a'; c <= 'f'; c++)
 
 	{
@@ -35,12 +38,13 @@ int main(void)
 
 	}
 
+
+
 	putchar('\n');
+
+
 
 	return (0);
 
 }
-
-
-
 

@@ -1,23 +1,24 @@
-#!/bin/bash
 #include <stdio.h>
 
 
 
 /**
- *
- *   * main - Ommit a few alphabets
- *
- *     *
- *
- *       * Return: Always 
- *
- *         */
+
+  * main - Ommit some alphabet
+
+  *
+
+  * Return: Always (Success)
+
+  */
 
 int main(void)
 
 {
 
 	char c;
+
+
 
 	for (c = 'a'; c <= 'z'; c++)
 
@@ -33,10 +34,13 @@ int main(void)
 
 	}
 
+
+
 	putchar('\n');
+
+
 
 	return (0);
 
 }
-
 

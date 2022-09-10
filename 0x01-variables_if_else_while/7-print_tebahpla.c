@@ -1,25 +1,24 @@
-#!/bin/bash
-
-
 #include <stdio.h>
 
 
 
 /**
- *
- *   * main - Prints  alphabet from z
- *
- *     *
- *
- *       * Return: Always 
- *
- *         */
+
+  * main - Prints the alphabet at reverse
+
+  *
+
+  * Return: Always (Success)
+
+  */
 
 int main(void)
 
 {
 
 	char c;
+
+
 
 	for (c = 'z'; c >= 'a'; c--)
 
@@ -29,10 +28,13 @@ int main(void)
 
 	}
 
+
+
 	putchar('\n');
+
+
 
 	return (0);
 
 }
-
 
