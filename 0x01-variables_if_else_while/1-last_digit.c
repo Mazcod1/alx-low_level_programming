@@ -1,13 +1,18 @@
-#!/bin/bash
+#include <stdlib.h>
+
+#include <time.h>
+
+#include <stdio.h>
+
 /**
+
+ * main - Prints random number to variable
+
  *
- *  * main - Prints random number
- *
- *   *
- *
- *    * Return: Always (Successful)
- *
- *     */
+
+ * Return: Always (Successful)
+
+ */
 
 int main(void)
 
@@ -16,6 +21,8 @@ int main(void)
 	int n;
 
 	char last[] = "Last digit of";
+
+
 
 	srand(time(0));
 
@@ -52,5 +59,4 @@ int main(void)
 
 
 }
-
 
