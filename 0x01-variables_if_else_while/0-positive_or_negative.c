@@ -1,4 +1,3 @@
-#!/bin/bash
 #include <stdlib.h>
 
 #include <time.h>
@@ -8,14 +7,14 @@
 
 
 /**
+
+ * main - Prints if number is positive, zero or negative
+
  *
- *  * main - Prints number 
- *
- *   *
- *
- *    * Return: Always
- *
- *     */
+
+ * Return: Always (Success)
+
+ */
 
 int main(void)
 
@@ -55,8 +54,9 @@ int main(void)
 
 	}
 
+
+
 	return (0);
 
 }
-
 
