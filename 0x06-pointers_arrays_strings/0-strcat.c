@@ -1,21 +1,16 @@
-#!/bin/bash
 #include "main.h"
 
 
 
 /**
 
- *_strcat - concatenates  the string pointed to by @src to
+ * *_strcat - function commute srtings
 
- * the end of the string pointed to by @dest
+ * @dest: param pointer to a char
 
- *@dest: String that will be appended
+ * @src: param pointer to a char
 
- *@src: String to be concatenated upon
-
- *
-
- * Return: returns poiner to @dest
+ * Return: return value of dest
 
  */
 
@@ -25,25 +20,44 @@ char *_strcat(char *dest, char *src)
 
 {
 
+	int i;
 
-
-	int index = 0, dest_len = 0;
-
-
-
-	while (dest[index++])
-
-		dest_len++;
+	int j;
 
 
 
-	for (index = 0; src[index]; index++)
+	i = 0;
 
-		dest[dest_len++] = src[index];
+	j = 0;
 
 
+
+	while (dest[i] != '\0')
+
+	{
+
+		i++;
+
+	}
+
+	while (src[j] != '\0')
+
+	{
+
+		dest[i] = src[j];
+
+		j++;
+
+		i++;
+
+	}
+
+
+
+	dest[i] = '\0';
 
 	return (dest);
 
 }
+
 
