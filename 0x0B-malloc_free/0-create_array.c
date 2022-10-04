@@ -2,8 +2,8 @@
 
 /**
  * create_array - creates an array of chars and initializes it withother chars.
- * @size - size of array
- * @c -character to insert
+ * @size: size of array
+ * @c: character to insert
  * Return: NULL if size is zero of if it fails,
  * pointer to array if everything is normal.
  */
@@ -24,5 +24,4 @@ char *create_array(unsigned int size, char c)
 		array[index] = c;
 
 	return (array);
-}	
-
+}
