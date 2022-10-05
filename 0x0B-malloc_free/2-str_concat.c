@@ -3,13 +3,16 @@
 #include <stdio.h>
 
 /**
- * str_concat - a function that concatenates two strings.
- * @sl:First string
- * @s2:Second string
- * Return: NULL incase of failure and pointer to new string incase of success
+ * str_concat - concatenate 2 strings.
+ * a NULL string is treated as an empty string.
+ * @s1: pointer to string.
+ * @s2: pointer to string.
+ *
+ * Return: pointer to newly allocated memory which has s1, s2 and null byte.
+ * NULL on failure.
  */
 
-char *str_concat(char *s1, char *s2)
+ char *str_concat(char *s1, char *s2)
 {
 	unsigned int len1, len2, size, i, j;
 	char *nstr;
