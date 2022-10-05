@@ -12,7 +12,7 @@
  * NULL on failure.
  */
 
- char *str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	unsigned int len1, len2, size, i, j;
 	char *nstr;
@@ -37,13 +37,13 @@
 		return (NULL);
 
 	i = 0;
-	while (i < len1)
+		while (i < len1)
 	{
 			nstr[i] = s1[i];
 			i++;
 	}
 	j = 0;
-	while (i <= size)
+		while (i <= size)
 	{
 		nstr[i] = s2[j];
 		i++;
