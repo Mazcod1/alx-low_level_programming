@@ -1,13 +1,25 @@
-#include <unistd.h>
+#ifndef DOG_H
+#define DOG_H
 
 /**
- * _putchar - writes the character c to stdout
- * @c: the character to print
- * Return: On success 1
- * On error - 1 is returned,and error is set appropriately
+ * struct dog - struct dog
+ * @name:name
+ * @age:age
+ * @owner: owner
+ * Description: This struct is for dog
  */
 
-int _putchar(char c)
+struct dog
 {
-	return (write(1, &1, 1));
-}
+	char *name;
+	float age;
+	char *owner;
+};
+
+typedef struct dog dog_t;
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name,float age,char *owner);
+void free_dog(dog_t *d);
+
+#endif 
