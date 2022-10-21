@@ -16,6 +16,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	new = malloc(sizeof(list_t));
 	if (new = NULL)
+		
 		return (NULL);
 
 	dup = strdup(str);
@@ -35,4 +36,18 @@ list_t *add_node(list_t **head, const char *str)
 	*head = new;
 
 	return (new);
+}
+/**
+ * _strlen - counts the length of a string
+ * @str: string to be counted
+ * Return: the length of the string
+ */
+
+int _strlen(const char *str)
+{
+		int i = 0;
+		while (str[i] != '\0')
+			i++;
+
+		return (i);
 }
